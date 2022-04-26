@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { AssetsPathService } from '../assets-path.service';
 import { HttpService } from '../http.service';
 import { ChatMessage } from '../model';
 import { ChatContact } from '../model';
@@ -21,7 +22,11 @@ export class ContactsFieldComponent implements OnInit {
 
 
 
-  constructor(private selectService: SelectService, private httpService: HttpService) {}
+  constructor(
+    public assetsPath: AssetsPathService,
+    private selectService: SelectService,
+    private httpService: HttpService,
+  ) {}
 
   ngOnInit(): void {
     this.getSelectedContact();

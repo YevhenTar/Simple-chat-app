@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { AssetsPathService } from './assets-path.service';
 
 
 
@@ -10,7 +11,9 @@ import { Component, Input } from '@angular/core';
 })
 export class AppComponent {
 
-  constructor() {}
+  constructor(
+    public assetsPath: AssetsPathService,
+  ) {}
 
 
 

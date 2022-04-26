@@ -27,7 +27,7 @@
         <div class="message-block">
             <input type="text" class="message-input" placeholder="Type your message" #messageText>
             <a class="send-button" (click)="addMessage(messageText.value)">
-            <img src="../../assets/img/send_message.png" width="30" height="30" alt="send-message" class="send-icon">
+            <img src="{{ assetsPath.getFullPath('/assets/img/send_message.png') }}" width="30" height="30" alt="send-message" class="send-icon">
             </a>
         </div>
     </ng-container>
