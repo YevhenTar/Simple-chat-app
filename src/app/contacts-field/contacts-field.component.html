@@ -1,0 +1,36 @@
+<section class="chat-section">  
+    <ng-container *ngIf="selectedContact">
+        <header class="chat-section__header">
+            <img src="{{ selectedContact.photo }}" alt="contact-photo" class="contact-photo">
+            <h2 class="contact-name">{{ selectedContact.name }}</h2>
+        </header>
+
+        <div class="chat-area">
+            <div class="message-wrap" *ngFor="let message of selectedContact.messages" >             
+                    <div class="message-inside-wrap" *ngIf="message.id; else myContact" >
+                        <img src="{{ selectedContact.photo }}" alt="client-photo" class="message-photo">
+                        <div class="message-info__block">
+                            <p class="message-text">{{ message.currentText}}</p>
+                            <p class="message-datepoint">{{ message.currentDate | date : "short"}}</p>
+                        </div>
+                    </div>  
+                    <ng-template #myContact>
+                        <div class="my-message-wrap">
+                            <div class="my-message-info__block">
+                                <p class="my-message-text">{{ message.currentText}}</p>
+                                <p class="my-message-datepoint">{{ message.currentDate | date : "short"}}</p>
+                            </div>
+                        </div>
+                    </ng-template>  
+            </div>
+        </div>
+        <div class="message-block">
+            <input type="text" class="message-input" placeholder="Type your message" #messageText>
+            <a class="send-button" (click)="addMessage(messageText.value)">
+            <img src="../../assets/img/send_message.png" width="30" height="30" alt="send-message" class="send-icon">
+            </a>
+        </div>
+    </ng-container>
+
+</section>
+

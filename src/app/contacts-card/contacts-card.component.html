@@ -1,0 +1,18 @@
+<ul class="contacts-list"> 
+    <li class="contacts-list__item" *ngFor="let contact of contacts" (click)="onSelect(contact)"> 
+        <div class="contacts-wrap">
+            <div class="person-wrap">
+                <div class="person-info-block">
+                    <img src="{{ contact.photo }}" alt="contact-photo" class="person-photo">
+                    <div class="person-text-block">
+                        <h4 class="person-name">{{contact.name}}</h4>
+                        <p class="person-message">{{contact.messages[2].currentText}}</p>
+                    </div>
+                </div>
+                <p class="date-point">{{contact.messages[2].currentDate | date : "mediumDate"}}</p>
+            </div>
+        </div>
+    </li>      
+</ul> 
+
+
