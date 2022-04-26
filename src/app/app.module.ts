@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactsCardComponent } from './contacts-card/contacts-card.component';
-import { ContactMessageComponent } from './contact-message/contact-message.component';
 import { HttpService } from './http.service';
 import { ContactsFieldComponent } from './contacts-field/contacts-field.component';
 
@@ -13,7 +12,6 @@ import { ContactsFieldComponent } from './contacts-field/contacts-field.componen
   declarations: [
     AppComponent,
     ContactsCardComponent,
-    ContactMessageComponent,
     ContactsFieldComponent
   ],
   imports: [

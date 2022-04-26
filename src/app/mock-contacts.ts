@@ -3,7 +3,7 @@ import { ChatContact } from "./model";
 
 export const CONTACTLIST: ChatContact[] = [
         {
-            photo: "./../assets/img/alice.png",
+            photo: "/assets/img/alice.png",
             name: "Alice Freeman",
             messages: [{
                     id: true,
@@ -23,7 +23,7 @@ export const CONTACTLIST: ChatContact[] = [
             ]
         },
         {
-            photo: "./../assets/img/josefina.png",
+            photo: "/assets/img/josefina.png",
             name: "Josefina",
             messages: [{
                     id: true,
@@ -43,7 +43,7 @@ export const CONTACTLIST: ChatContact[] = [
             ]
         },
         {
-            photo: "./../assets/img/velasques.png",
+            photo: "/assets/img/velasques.png",
             name: "Velazques",
             messages: [{
                     id: true,
@@ -63,7 +63,7 @@ export const CONTACTLIST: ChatContact[] = [
             ]
         },
         {
-            photo: "./../assets/img/barrera.png",
+            photo: "/assets/img/barrera.png",
             name: "Barrera",
             messages: [{
                     id: true,
