@@ -24,12 +24,12 @@
                     </ng-template>  
             </div>
         </div>
-        <div class="message-block">
-            <input type="text" class="message-input" placeholder="Type your message" #messageText>
-            <a class="send-button" (click)="addMessage(messageText.value)">
+        <form action="" class="message-form" method="get" #myForm="ngForm">
+            <input type="text" class="message-input" placeholder="Type your message"  name="message-input"  #messageText>
+            <button type="submit" class="send-button" (click)="addMessage(messageText.value); messageText.value=''">
             <img src="{{ assetsPath.getFullPath('/assets/img/send_message.png') }}" width="30" height="30" alt="send-message" class="send-icon">
-            </a>
-        </div>
+            </button>
+        </form>
     </ng-container>
 
 </section>

@@ -8,17 +8,17 @@ export const CONTACTLIST: ChatContact[] = [
             messages: [{
                     id: true,
                     currentText: 'Quickly come to the meeting room 1B, we have a big server issue',
-                    currentDate: new Date('6/12/17, 4:00 AM')
+                    currentDate: new Date('1/12/17, 4:00 AM')
                 },
                 {
                     id: false,
                     currentText: 'I am having breakfast right now, can`t you wait for 10 minutes?',
-                    currentDate: new Date('6/12/17, 4:05 AM')  
+                    currentDate: new Date('1/12/17, 4:05 AM')  
                 },
                 {
                     id: true,
                     currentText: 'You are the worst!',
-                    currentDate: new Date('6/12/17, 4:10 AM')  
+                    currentDate: new Date('1/12/17, 4:10 AM')  
                 }
             ]
         },
@@ -48,17 +48,17 @@ export const CONTACTLIST: ChatContact[] = [
             messages: [{
                     id: true,
                     currentText: 'Hello. Can you help me?',
-                    currentDate: new Date('3/18/17, 4:00 AM')
+                    currentDate: new Date('5/18/17, 4:00 AM')
                 },
                 {
                     id: false,
                     currentText: 'I am having breakfast right now, can`t you wait for 10 minutes?',
-                    currentDate: new Date('3/18/17, 4:05 AM')  
+                    currentDate: new Date('5/18/17, 4:05 AM')  
                 },
                 {
                     id: true,
                     currentText: 'Quickly come to the meeting room 1B, we have a big server issue',
-                    currentDate: new Date('3/18/17, 4:10 AM')
+                    currentDate: new Date('5/18/17, 4:10 AM')
                 }
             ]
         },

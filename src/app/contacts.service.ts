@@ -1,5 +1,5 @@
 import { Inject, Injectable } from '@angular/core';
-import { ChatContact } from './model';
+import { ChatContact, ChatMessage } from './model';
 import { CONTACTLIST } from './mock-contacts';
 import { Observable, of } from 'rxjs';
 import { APP_BASE_HREF, Location } from '@angular/common';
@@ -21,4 +21,13 @@ export class ContactsService {
     }));
     return contacts;
   }
+
+  sortContacts(contactList: ChatContact[]): ChatContact[]{
+    const sortedContacts = contactList.sort((a: ChatContact, b: ChatContact): number => {
+      return b.messages[b.messages.length-1].currentDate.getTime() - a.messages[a.messages.length-1].currentDate.getTime();
+    });
+    return sortedContacts;
+  }
+
+
 }

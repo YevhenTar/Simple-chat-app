@@ -4,6 +4,7 @@ import { HttpService } from '../http.service';
 import { ChatMessage } from '../model';
 import { ChatContact } from '../model';
 import { SelectService } from '../select.service';
+import { NgForm } from '@angular/forms';
 
 
 @Component({
@@ -18,6 +19,7 @@ export class ContactsFieldComponent implements OnInit {
   public selectedContact: ChatContact | null = null;
 
   chuckMessage: string = '';
+  
 
 
 
@@ -41,10 +43,11 @@ export class ContactsFieldComponent implements OnInit {
           this.selectedContact.messages.push(new ChatMessage(true,this.chuckMessage, new Date()));
         }
       }, 5000);
-      
     }
-    
   };
+
+
+
 
 
   getSelectedContact(){

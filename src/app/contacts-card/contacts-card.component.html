@@ -6,10 +6,10 @@
                     <img src="{{ contact.photo }}" alt="contact-photo" class="person-photo">
                     <div class="person-text-block">
                         <h4 class="person-name">{{contact.name}}</h4>
-                        <p class="person-message">{{contact.messages[2].currentText}}</p>
+                        <p class="person-message">{{contact.messages[(contact.messages.length)-1].currentText}}</p>
                     </div>
                 </div>
-                <p class="date-point">{{contact.messages[2].currentDate | date : "mediumDate"}}</p>
+                <p class="date-point">{{contact.messages[(contact.messages.length)-1].currentDate | date : "mediumDate"}}</p>
             </div>
         </div>
     </li>      
